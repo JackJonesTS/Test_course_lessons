@@ -1,0 +1,3583 @@
+{
+	"info": {
+		"_postman_id": "1f44c6d3-fc0e-4aa8-a24a-edec6326cffc",
+		"name": "Home_worke_reqwest_7_7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25468172"
+	},
+	"item": [
+		{
+			"name": "Sort_reqwest_0001",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "Корелла",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0002",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "крокодил",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "мальчик",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0003",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "немецкая овчарка",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "сучка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0004",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "питбуль",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0005",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0006",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кот",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "Корелла",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "мальчик",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0007",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кот",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "крокодил",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "сучка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0008",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кот",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "немецкая овчарка",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0009",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кот",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "питбуль",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0010",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кот",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0011",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кот",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0012",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кот",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0013",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кошка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "крокодил",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0014",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кошка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "немецкая овчарка",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0015",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кошка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "питбуль",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0016",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кошка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0017",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кошка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0018",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кошка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "мальчик",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0019",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "кошка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "Корелла",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "сучка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0020",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "обезьянка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "немецкая овчарка",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0021",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "обезьянка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "пидбуль",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0022",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "обезьянка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0023",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "обезьянка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "мальчик",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0024",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "обезьянка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "сучка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0025",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "обезьянка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "Корелла",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0026",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "обезьянка",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "крокодил",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0027",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "попугай",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "питбуль",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0028",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "попугай",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "мальчик",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0029",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "попугай",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "сучка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0030",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "попугай",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0031",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "попугай",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "Корелла",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0032",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "попугай",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "крокодил",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0033",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "попугай",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "немецкая оачарка",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0034",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "сучка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0035",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0036",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0037",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "Корелла",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0038",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "крокодил",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0039",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "немецкая овчарка",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0040",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "питбуль",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "мальчик",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0041",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "индийский",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0042",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "Корелла",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "девочка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0043",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "крокодил",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "Кабель",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0044",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "немецкая овчарка",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "мальчик",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0045",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "питбуль",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "сучка",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort_reqwest_0046",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "page_size",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "species_name",
+							"value": "Герой",
+							"type": "text"
+						},
+						{
+							"key": "breed_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{URL_1}}/api/pet/",
+					"protocol": "http",
+					"host": [
+						"{{URL_1}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "{{URL_1}}",
+			"value": "158.160.56.133",
+			"type": "string"
+		},
+		{
+			"key": "URL_1",
+			"value": "158.160.56.133"
+		}
+	]
+}
